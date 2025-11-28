@@ -1,674 +1,185 @@
 body{
-    background-color: white;
     margin: 0;
     padding: 0;
-    background-color: rgb(214, 230, 211);
+    background-color: #F5F5F5;
 }
 
-#title-wrapper{
+
+#header-container{
     display: flex;
     flex-direction: column;
-    /*
-    border-bottom: 1px solid gray;
-    border-bottom-style:solid;
-    background-color: #9fbe8f;
-    */
-    background-color: rgb(194, 228, 188);
-}
-
-#title{
-    text-align: center;
-    font-family: "Fleur De Leah", serif;
-    font-size: 5vw;
-    color: #070a05;
-    text-shadow: 1px 1px 2px black;
-}
-
-#quicklinks-wrapper{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
     align-items: center;
 }
 
-.quicklink{
-    padding: 1vw;
-    font-family: "Radley", serif;
-    font-size: 2vw;
+#header-title{
+    margin: 2rem;
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: bold;
+}
+
+#header-links{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+#header-links a{
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
     cursor: pointer;
-    color: #070a05;
-}
-
-#splash-container{
-    padding: 2vw;
-    background-color: rgb(194, 228, 188);
-}
-
-#splash-img{
-    width: 100%;
-}
-
-#info1{
-    /*
-    width: 50%;
-    margin: 0 auto;
-    width: 50vw;
-    */
-    display: flex;
-    flex-direction: column;
-}
-
-#info1-img{
-    width: 100%;
-}
-
-#info-image-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 9vw;
-    margin-right: 9vw;
-}
-
-#img-container{
-    width: 50vw;
-    margin: 0 auto;
-}
-
-.info-title{
-    font-size: 4vw;
-    font-family: "Newsreader", serif;
-    font-weight: lighter;
-    text-align: center;
-    padding: 1vw;
-    justify-content: center;
-}
-
-#info-details-title{
-    margin-bottom: 2vw;
-    font-size: 3vw;
-    font-family: "Newsreader", serif;
-    font-weight: lighter;
-}
-.info-details{
-    font-size: 2vw;
-    font-family: "Newsreader", serif;
-    font-weight: lighter;
-    text-align: center;
-}
-
-#info-details-wrapper{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    width: 25vw;
-    margin: 0 auto;
-}
-
-.padding{
-    padding: 3vw;
-}
-
-.aboutus-wrapper{
-    margin-bottom: 3vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.aboutus-text-wrapper{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2vw;
-    width: 25vw;
-}
-
-.aboutus-img{
-    width: 50vw;
-    margin-right: 3vw;
-}
-
-.aboutus-title{
-    font-size: 3vw;
-    font-family: "Newsreader", serif;
-    font-weight: lighter;
-    text-align: center;
-    margin: 2vw;
-}
-
-.aboutus-text{
-    text-align: center;
-    font-size: 2vw;
-    font-family: "Newsreader", serif;
-    font-weight: lighter;
-}
-
-.aboutus-slide{
-    display: none;
-}
-
-.prev, .next {
-  cursor: pointer;
-  padding: 3vw;
-  font-size: x-large;
-}
-
-#aboutus-slideshow{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center ;
-}
-
-#footer-wrapper{
-    padding-top: 2vw;
-    padding-bottom: 3vw;
-    background-color: rgb(194, 228, 188);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2vw;
-}
-
-#conclusion{
-    font-size: 4vw;
-    font-family: "Newsreader", serif;
-    font-weight: lighter;
-}
-
-#footer-rsvp{
-    font-size: 3vw;
-    font-family: "Newsreader", serif;
-    font-weight: lighter;
     text-decoration: none;
     color: black;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+#splash-container{
+    background-image: url("/pictures_rebuild/splash.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    padding: 2rem;
+    min-height: 300px;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+#splash-info-container{
+    display: flex;
+    flex-direction: column;
 }
 
-@media only screen and (max-width: 320px){
-
-
+#splash-title{
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(2rem, 5vw, 4rem);
 }
-@media only screen and (max-width: 480px){
-    #title{
-        text-align: center;
-        font-family: "Fleur De Leah", serif;
-        font-size: 8vw;
-        color: #070a05;
-        text-shadow: 1px 1px 2px black;
-    }
 
-    #quicklinks-wrapper{
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+#splash-date{
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
 
-    .quicklink{
-        padding: 1vw;
-        font-family: "Radley", serif;
-        font-size: 4vw;
-        cursor: pointer;
-        color: #070a05;
-    }
-    #info1{
-        width: 100%;
-        margin: 0 auto;
-        width: 80vw;
-    }
+#information-invite, #information-address, #information-time{
+    text-align: center;
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    margin: 1rem;
+}
 
-    #info1-img{
-        width: 100%;
-    }
+#information-invite{
+    font-weight: bold;
+}
 
-    .info-title{
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-        text-align: center;
-        padding: 1vw;
-    }
-    #info-details-title{
-    
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-    }
-    .info-details{
-        font-size: 3vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-    }
+.story-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
 
-    #info-details-wrapper{
-        padding-top: 2vw;
-        padding-bottom: 2vw;
-        display:flex;
-        flex-direction: column;
-        gap: 2vw;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    #info-image-wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #img-container{
-        width: 80vw;
-        margin: 0 auto;
-    }
-    .aboutus-wrapper{
-        margin-bottom: 3vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.story-image{
+    width: 95vw;
+}
 
-    .aboutus-text-wrapper{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 2vw;
-        width: 25vw;
-    }
+.story-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-    .aboutus-img{
-        width: 80vw;
-        margin-right: 0vw;
-    }
+.story-title{
+    text-align: center;
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    margin: 1rem;
+}
 
-    .aboutus-title{
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-        text-align: center;
-    }
-
-    .aboutus-text{
-        text-align: center;
-        font-size: 3vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-    }
-
-    .aboutus-slide{
-        display: none;
-    }
-
-    .prev, .next {
+/* From Uiverse.io by mrhyddenn */ 
+button {
+    font-family: "Noto Serif Georgian", serif;
+    background: white;
+    border: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 300;
     cursor: pointer;
-    padding: 3vw;
-    font-size: x-large;
-    }
-
-    #aboutus-slideshow{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center ;
-    }
+    margin-top: 4vw;
 }
-@media only screen and (max-width: 768px){
-    #title{
-        text-align: center;
-        font-family: "Fleur De Leah", serif;
-        font-size: 8vw;
-        color: #070a05;
-        text-shadow: 1px 1px 2px black;
-    }
 
-    #quicklinks-wrapper{
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .quicklink{
-        padding: 1vw;
-        font-family: "Radley", serif;
-        font-size: 4vw;
-        cursor: pointer;
-        color: #070a05;
-    }
-    #info1{
-        width: 100%;
-        margin: 0 auto;
-        width: 80vw;
-    }
-
-    #info1-img{
-        width: 100%;
-    }
-
-    .info-title{
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-        text-align: center;
-        padding: 1vw;
-    }
-    #info-details-title{
-    
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-    }
-    .info-details{
-        font-size: 3vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-    }
-
-    #info-details-wrapper{
-        padding-top: 2vw;
-        padding-bottom: 2vw;
-        display:flex;
-        flex-direction: column;
-        gap: 2vw;
-        text-align: center;
-    }
-    .aboutus-wrapper{
-        margin-bottom: 3vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .aboutus-text-wrapper{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 2vw;
-        width: 80vw;
-    }
-
-    .aboutus-img{
-        width: 80vw;
-        margin-right: 0vw;
-    }
-
-    .aboutus-title{
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-        text-align: center;
-    }
-
-    .aboutus-text{
-        text-align: center;
-        font-size: 3vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-    }
-
-    .aboutus-slide{
-        display: none;
-    }
-
-    .prev, .next {
-    cursor: pointer;
-    padding: 3vw;
-    font-size: x-large;
-    }
-
-    #aboutus-slideshow{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center ;
-    }
+span {
+    display: inline-block;
 }
-@media only screen and (max-width: 992px){
-#title{
-        text-align: center;
-        font-family: "Fleur De Leah", serif;
-        font-size: 8vw;
-        color: #070a05;
-        text-shadow: 1px 1px 2px black;
-    }
 
-    #quicklinks-wrapper{
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .quicklink{
-        padding: 1vw;
-        font-family: "Radley", serif;
-        font-size: 4vw;
-        cursor: pointer;
-        color: #070a05;
-    }
-    #info1{
-        width: 100%;
-        margin: 0 auto;
-        width: 80vw;
-    }
-
-    #info1-img{
-        width: 100%;
-    }
-
-    .info-title{
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-        text-align: center;
-        padding: 1vw;
-    }
-    #info-details-title{
-    
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-    }
-    .info-details{
-        font-size: 3vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-    }
-
-    #info-details-wrapper{
-        padding-top: 2vw;
-        padding-bottom: 2vw;
-        display:flex;
-        flex-direction: column;
-        gap: 2vw;
-        text-align: center;
-    }
-    .aboutus-wrapper{
-        margin-bottom: 3vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .aboutus-text-wrapper{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 2vw;
-        width: 80vw;
-    }
-
-    .aboutus-img{
-        width: 80vw;
-        margin-right: 0vw;
-    }
-
-    .aboutus-title{
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-        text-align: center;
-    }
-
-    .aboutus-text{
-        text-align: center;
-        font-size: 3vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-    }
-
-    .aboutus-slide{
-        display: none;
-    }
-
-    .prev, .next {
-    cursor: pointer;
-    padding: 3vw;
-    font-size: x-large;
-    }
-
-    #aboutus-slideshow{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center ;
-    }
+button:hover {
+    background-color: black;
+    color: white;
 }
-@media only screen and (max-width: 1200px){
-    #title{
-        text-align: center;
-        font-family: "Fleur De Leah", serif;
-        font-size: 8vw;
-        color: #070a05;
-        text-shadow: 1px 1px 2px black;
-    }
 
-    #quicklinks-wrapper{
+#footer-container{
+    background-color: #ddebf6;
+}
+
+#footer-title, #footer-rsvp{
+    font-family: "Noto Serif Georgian", serif;
+    padding: 1rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+    #information-container{
         display: flex;
         flex-direction: row;
-        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 95vw;
+    }
+
+    #information-image{
+        width: 45vw;
         justify-content: center;
         align-items: center;
     }
 
-    .quicklink{
-        padding: 1vw;
-        font-family: "Radley", serif;
-        font-size: 4vw;
-        cursor: pointer;
-        color: #070a05;
-    }
-    #info1{
-        width: 100%;
-        margin: 0 auto;
-        width: 80vw;
+    #information-text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45vw;
     }
 
-    #info1-img{
-        width: 100%;
+    .story-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 95vw;
     }
-
-    .info-title{
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-        text-align: center;
-        padding: 1vw;
-    }
-    #info-details-title{
     
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-    }
-    .info-details{
-        font-size: 3vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
+    .story-image{
+        width: 45vw;
     }
 
-    #info-details-wrapper{
-        padding-top: 2vw;
-        padding-bottom: 2vw;
-        display:flex;
-        flex-direction: column;
-        gap: 2vw;
-        text-align: center;
-    }
-    .aboutus-wrapper{
-        margin-bottom: 3vw;
+    .story-text-container{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-    }
-
-    .aboutus-text-wrapper{
         justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 2vw;
-        width: 80vw;
-    }
-
-    .aboutus-img{
-        width: 80vw;
-        margin-right: 0vw;
-    }
-
-    .aboutus-title{
-        font-size: 4vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-        text-align: center;
-    }
-
-    .aboutus-text{
-        text-align: center;
-        font-size: 3vw;
-        font-family: "Newsreader", serif;
-        font-weight: lighter;
-    }
-
-    .aboutus-slide{
-        display: none;
-    }
-
-    .prev, .next {
-    cursor: pointer;
-    padding: 3vw;
-    font-size: x-large;
-    }
-
-    #aboutus-slideshow{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center ;
+        width: 45vw;
     }
 }

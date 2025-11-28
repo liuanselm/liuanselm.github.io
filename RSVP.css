@@ -1,33 +1,61 @@
 body{
-    background-color: #071c07;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
 }
 
-#title{
-    text-align: center;
-    font-family: "Radley", serif;
-    font-size: 100px;
-    color: #f6eee3;
-    border-bottom: 1px #f6eee3;
-    border-bottom-style:solid;
-}
-
-#quicklinks-wrapper{
+#header-container{
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.quicklink{
-    padding: 15px;
-    font-family: "Radley", serif;
-    font-size: 25px;
-    cursor: pointer;
-    color: #f6eee3;
+#header-title{
+    margin: 2rem;
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: bold;
+    text-align: center;
 }
 
-#form-wrapper{
-    padding: 50px;
+#header-links{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    cursor: pointer;
+}
+
+#header-links a{
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    text-decoration: none;
+    color: black;
+}
+
+#form-container{
+ width: 95vw;
+ margin: 0 auto;
+ display: block;
+ height: 80vh;
+ margin: 1rem;
+}
+
+#form-container iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#footer-container{
+    background-color: #ddebf6;
+}
+
+#footer-title, #footer-rsvp{
+    font-family: "Noto Serif Georgian", serif;
+    padding: 1rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     text-align: center;
 }

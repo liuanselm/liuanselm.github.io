@@ -1,46 +1,115 @@
 body{
-    background-color: #071c07;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
 }
 
-#title{
-    text-align: center;
-    font-family: "Fleur De Leah", serif;
-    font-size: 100px;
-    color: #f6eee3;
-    border-bottom: 1px #f6eee3;
-    border-bottom-style:solid;
-}
-
-#quicklinks-wrapper{
+#header-container{
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.quicklink{
-    padding: 15px;
-    font-family: "Radley", serif;
-    font-size: 25px;
-    cursor: pointer;
-    color: #f6eee3;
-}
-
-.question-wrapper{
-    padding: 50px;
+#header-title{
+    margin: 2rem;
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: bold;
     text-align: center;
 }
 
-.question{
-    font-family: "Fleur De Leah", serif;
-    font-size: 25px;
-    color: #f6eee3;
+#header-links{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    cursor: pointer;
 }
 
-.answer{
-    font-family: "Fleur De Leah", serif;
-    font-size: 25px;
-    color: #9fbe8f;
+#header-links a{
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
     text-decoration: none;
+    color: black;
+}
+
+#faq-splash-container{
+    background-image: url("/pictures_rebuild/faq_splash.jpg");
+    background-size: cover;
+    margin: 1rem;
+    height: 100vh;
+    background-position: center left;
+}
+
+#faq-splash-image{
+    width: 100%;
+}
+
+#faq-splash-text-container{
+    padding: 2rem;
+}
+
+.faq-splash-text{
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin: 1rem;
+
+}
+
+.faq details {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.faq summary {
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none; /* removes default arrow in some browsers */
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.faq summary::-webkit-details-marker {
+    display: none; /* hides default marker in Chrome/Safari */
+}
+
+.faq p{
+    font-family: "Noto Serif Georgian", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.faq img{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.faq details[open] {
+    background: #f9f9f9;
+}
+
+.faq{
+    margin: 2rem;
+}
+
+#footer-container{
+    background-color: #ddebf6;
+}
+
+#footer-title, #footer-rsvp{
+    font-family: "Noto Serif Georgian", serif;
+    padding: 1rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    text-align: center;
 }

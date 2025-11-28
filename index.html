@@ -3,136 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wedding</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Radley:ital@0;1&family=Ruthie&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?">
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("aboutus-slide");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex-1].style.display = "block";
-            }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <title>Haley & Anselm</title>
 </head>
-<body onload="showSlides()">
-    <div id="title-wrapper">
-        <div id="title">
-            Haley and Anselm's Wedding
-        </div>
-        <div id="quicklinks-wrapper">
-            <a href="RSVP.html" class="quicklink">RSVP</a>
-            <a href="Registry.html" class="quicklink">REGISTRY</a>
-            <a href="index_rebuild.html" class="quicklink">FAQ</a>
+<body>
+    <div id="header-container">
+        <div id="header-title">Haley & Anselm</div>
+        <div id="header-links">
+            <a href="/RSVP.html">RSVP</a>
+            <a href="/FAQ.html">FAQ</a>
+            <a href="/Registry.html">Registry</a>
         </div>
     </div>
     <div id="splash-container">
-        <img id="splash-img" src="pictures/splash-2.jpg">
+        <div id="splash-title">It is time.</div>
+        <div id="splash-date">5.28.2026</div>
+        <a href="/RSVP_rebuild.html">
+            <button>
+                <span>-RSVP NOW!-</span>
+            </button>
+        </a>
     </div>
-    <div id="info1">
-        <div class="info-title">We invite you to our shindig!!!</div>
-        <div id="info-image-wrapper">
-            <div id="img-container">
-                <img id="info1-img" src="pictures/info-2.jpg">
-            </div>
-            <div id="info-details-wrapper">
-                <div id= "info-details-title">When and where</div>
-                <div class="info-details">5:00pm-10:pm</div>
-                <div class="info-details">29015 Garland Ln, Menifee, CA</div>
-            </div>
+    <div id="information-invite">You are invited to our shindig!</div>
+    <div class="story-container">
+        <img class="story-image" src="pictures_rebuild/info-2.jpg">
+        <div class="story-text-container">
+            <div class="story-title">When & Where</div>
+            <div id="information-address">29015 Garland Ln, Menifee, CA</div>
+            <div id="information-time">5:00pm-10:00pm</div>
         </div>
     </div>
-    <div id="aboutus-slideshow">
-        <a onclick="plusSlides(-1)" class="prev">&#10094;</a>
-        <div class="aboutus-slide fade">
-            <div class="aboutus-wrapper">
-                <img class="aboutus-img" src="pictures/aboutus.jpg">
-                <div class="aboutus-text-wrapper">
-                    <div class="aboutus-title">What can we say...</div>
-                    <div class="aboutus-text">We're adorable. We love each other. And we are obnoxious about it.</div>
-                </div>
-            </div>
-        </div>
-        <div class="aboutus-slide fade">
-            <div class="aboutus-wrapper">
-                <img class="aboutus-img" src="pictures/dininghall.jpg">
-                <div class="aboutus-text-wrapper">
-                    <div class="aboutus-title">We met in a dining hall.</div>
-                    <div class="aboutus-text">Weird place to meet, but it worked out.</div>
-                </div>
-            </div>
-        </div>
-        <div class="aboutus-slide fade">
-            <div class="aboutus-wrapper">
-                <img class="aboutus-img" src="pictures/dating.jpg">
-                <div class="aboutus-text-wrapper">
-                    <div class="aboutus-title">We started dating, obviously.</div>
-                    <div class="aboutus-text">I didn't even know our first date was a date.</div>
-                </div>
-            </div>
-        </div>
-        <div class="aboutus-slide fade">
-            <div class="aboutus-wrapper">
-                <img class="aboutus-img" src="pictures/info-2.jpg">
-                <div class="aboutus-text-wrapper">
-                    <div class="aboutus-title">We moved across the country.</div>
-                    <div class="aboutus-text">San Diego is kinda chill.</div>
-                </div>
-            </div>
-        </div>
-        <div class="aboutus-slide fade">
-            <div class="aboutus-wrapper">
-                <img class="aboutus-img" src="pictures/info-2.jpg">
-                <div class="aboutus-text-wrapper">
-                    <div class="aboutus-title">We got doggies.</div>
-                    <div class="aboutus-text">Olive is a sweetheart. Mr. Maple is a menace.</div>
-                </div>
-            </div>
-        </div>
-        <div class="aboutus-slide fade">
-            <div class="aboutus-wrapper">
-                <img class="aboutus-img" src="pictures/info-2.jpg">
-                <div class="aboutus-text-wrapper">
-                    <div class="aboutus-title">He dropped the question.</div>
-                    <div class="aboutus-text">She almost died climbing up here.</div>
-                </div>
-            </div>
-        </div>
-        <div class="aboutus-slide fade">
-            <div class="aboutus-wrapper">
-                <img class="aboutus-img" src="pictures/info-2.jpg">
-                <div class="aboutus-text-wrapper">
-                    <div class="aboutus-title">And now we're here!</div>
-                    <div class="aboutus-text">So much planning.</div>
-                </div>
-            </div>
-        </div>
-        <a onclick="plusSlides(1)" class="next">&#10095;</a>
-    </div>
-    <div id="footer-wrapper">
-        <div id="conclusion">Be there or be square</div>
-        <a href="RSVP.html" id="footer-rsvp">RSVP</a>
+    <div id="footer-container">
+        <div id="footer-title">You better show up.</div>
+        <div id="footer-rsvp">Seriously, RSVP.</div>
     </div>
 </body>
 </html>
