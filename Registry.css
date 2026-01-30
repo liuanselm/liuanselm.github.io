@@ -47,6 +47,7 @@ body{
     font-size: clamp(1.1rem, 2vw, 1.5rem);
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 #Registry-fund{
@@ -69,4 +70,16 @@ body{
 #Registry-splash-image{
     width: 100%;
     padding-top: 1rem;
+}
+
+#QR-container{
+    margin: 1rem;
+    text-align: center;
+}
+
+#QR-container img{
+    margin: 2vw;
+    max-width: 300px;
+    width: 90vw;
+    height: auto;
 }
